@@ -241,7 +241,7 @@ func (d *TextGenerator) DrawString(s string) (img image.Image, err error) {
 func main() {
 	usbIDFlag := flag.String("devid", "0416:5020", "USB device ID")
 	deviceIndex := flag.Int("devnr", 0, "device index (default 0)")
-	fontFileFlag := flag.String("font", "k8x12L.ttf", "TTF font file for text (cf: http://littlelimit.net/k8x12.htm)")
+	fontFileFlag := flag.String("font", "k8x12/k8x12.ttf", "TTF font file for text (cf: http://littlelimit.net/k8x12.htm)")
 	fontSizeFlag := flag.Float64("fs", 12, "Font size")
 	fontDPIFlag := flag.Float64("dpi", 72, "Font DPI")
 	fontBaseFlag := flag.Int("base", 10, "Base pixel")
