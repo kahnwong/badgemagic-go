@@ -21,13 +21,15 @@ chmod +x badgemagic-tool # set executable permissions
 ## Run it
 
 ```sh
-sudo ./badgemagic-tool -mode anim "Your text..."
+sudo ./badgemagic-tool -mode anim -font k8x12.ttf "Your text..."
 ```
+
+NOTE: By default, the font is assumed to be in a subdirectory named `k8x12`.
 
 With custom font:
 
 ```sh
-sudo ./badgemagic-tool -mode anim -font k8x12.ttf "CyReVolt 段"
+sudo ./badgemagic-tool -mode anim -font path/to/font.ttf "Your text..."
 ```
 
 NOTE: If you set up udev rules, you will not need `sudo`.
