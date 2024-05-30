@@ -1,9 +1,12 @@
 name: Build and upload
 
 on:
-  release:
-    types:
-      - created
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
 
 jobs:
   shipit:
