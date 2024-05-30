@@ -2,6 +2,8 @@
 
 ## Download font
 
+NOTE: This step is optional, getting you a nice compact font.
+
 http://littlelimit.net/k8x12.htm
 
 ```sh
@@ -17,6 +19,12 @@ chmod +x badgemagic-tool # set executable permissions
 ```
 
 ## Run it
+
+```sh
+sudo ./badgemagic-tool -mode anim "Your text..."
+```
+
+With custom font:
 
 ```sh
 sudo ./badgemagic-tool -mode anim -font k8x12.ttf "CyReVolt 段"
