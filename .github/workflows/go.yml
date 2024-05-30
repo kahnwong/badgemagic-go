@@ -1,6 +1,9 @@
 name: Build and upload
 
-on: push
+on:
+  push:
+    tags:
+      - "v*.*.*"
 
 jobs:
   shipit:
@@ -18,6 +21,5 @@ jobs:
 
     - name: Upload
       uses: softprops/action-gh-release@v2
-      if: startsWith(github.ref, 'refs/tags/')
       with:
         files: badgemagic-tool
