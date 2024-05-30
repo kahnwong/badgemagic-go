@@ -20,7 +20,7 @@ jobs:
       run: go build .
 
     - name: Upload
-      uses: actions/upload-artifact@v4
+      uses: nanoufo/action-upload-artifacts-and-release-assets@v2
       with:
-        name: badgemagic-tool
         path: badgemagic-tool
+        upload-release-files: true
