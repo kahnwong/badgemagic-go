@@ -1,9 +1,9 @@
 name: Build and upload
 
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  release:
+    types:
+      - created
 
 jobs:
   shipit:
@@ -23,4 +23,3 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         files: badgemagic-tool
-        token: ${{ secrets.GITHUB_TOKEN }}
