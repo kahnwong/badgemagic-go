@@ -33,6 +33,7 @@ sudo ./badgemagic-tool -mode anim -font path/to/font.ttf "Your text..."
 ```
 
 NOTE: If you set up udev rules, you will not need `sudo`.
+Copy the file `99-ledbadge.rules` to `/etc/udev/rules.d/`.
 
 ## Build yourelf
 
