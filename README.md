@@ -8,7 +8,7 @@ http://littlelimit.net/k8x12.htm
 
 ```sh
 wget https://littlelimit.net/arc/k8x12/k8x12_ttf_2021-05-05.zip
-unzip k8x12_ttf_2021-05-05.zip
+unzip -d k8x12 k8x12_ttf_2021-05-05.zip
 ```
 
 ## Download prebuilt version
@@ -21,7 +21,7 @@ chmod +x badgemagic-tool # set executable permissions
 ## Run it
 
 ```sh
-sudo ./badgemagic-tool -mode anim -font k8x12.ttf "Your text..."
+sudo ./badgemagic-tool -mode anim "Your text..."
 ```
 
 NOTE: By default, the font is assumed to be in a subdirectory named `k8x12`.
